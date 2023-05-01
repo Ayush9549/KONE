@@ -1,0 +1,12 @@
+.address_container
+{
+/*	display: flex;*/
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.address_container>input
+{
+/*	padding: 10px;*/
+}

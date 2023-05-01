@@ -1,0 +1,345 @@
+body 
+{
+  width: 100%;
+  height: 100%;
+  font-family: Roboto,Arial,sans-serif;
+  margin: 0;
+/*  background: rgba(26, 39, 71 ,90%);*/
+  color: #fff;
+  transition: 2s all;
+}
+
+.product_container
+{
+  width: 100%;
+  padding: 0px;
+}
+
+#wrapper 
+{
+  display: flex;
+}
+
+#sticky 
+{
+  position: sticky;
+  position: -webkit-sticky;
+/*  width: 40%;*/
+  flex-basis: 40%;
+  height: 590px;
+  top: 52px;
+  color: #fff;
+
+}
+
+.img_section
+{
+  display: flex;
+  height: 85.5%;
+}
+
+.pics
+{
+  background: #fff; 
+  width: 65px;
+  height: 100%;
+  border: 1px solid grey;
+  border-right: none;
+}
+
+.pics>div
+{
+/*   background: green; */
+  height: 64px;
+  width: 50px;
+  cursor: pointer;
+  margin: 3px 10px 0 10px;
+}
+
+.pics>div:hover
+{
+  border: 3px solid blue;
+}
+
+.bigImg
+{
+  background: #fff; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid grey;
+  position: relative;
+}
+
+.wishlist
+{
+  width: 30px;
+  height: 30px;
+  /*padding: 10px;*/
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  cursor: pointer;
+  /*background: red;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishlist>img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.add_to_wishlist
+{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  color: #FFF;
+  margin-left: 8px;
+  padding: 5px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.bigImg>img
+{
+  max-height: 436px;
+  max-width: 416px;
+  margin-left: 10Px;
+  margin: 15px 0;
+  cursor: crosshair;
+}
+
+.pics>div>img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.btns
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 0 10px;
+}
+
+#add_to_cart,#buy_now
+{
+  padding: 15px 50px;
+  background: green;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add_to_cart>img,#buy_now>img
+{
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+/*///////Right side content//////*/
+.product_details
+{
+  /*background: yellow;*/
+/*  width: 60%;*/
+  flex-basis: 60%;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 0.5px;
+  margin-top: 52px;
+}
+
+.product_details .p_name
+{
+/*  padding-top: 20px;*/
+  font-size: 18px;
+  margin-bottom: 5px;
+  /*background: red;*/
+}
+
+.product_details .p_rating
+{
+  /*background: red;*/
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.product_details .p_rating>span
+{
+  background: green;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.rate
+{
+/*  background: red;*/
+  display: flex;
+  font-size: 28px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.rate>span
+{
+/*  background: green;*/
+  font-size: 20px;
+  margin: 8px 0 8px 20px;
+  color: grey;
+}
+
+.exp_date
+{
+  display: flex;
+  font-size: 14px;
+}
+
+.exp_date>img
+{
+  width: 2%;
+  height: 5%;
+  filter: invert(100%);
+  margin-right: 5px;
+}
+
+.quantites
+{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 20px 0;
+}
+
+.quantity_titile,.service_titile,.description_titile
+{
+  color: #878787;
+  font-weight: bold;
+}
+
+.quantity_box select
+{
+  padding: 5px 3px;
+  font-size: 20px;
+  outline: none;
+}
+
+.services
+{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.description
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.description_data
+{
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.specifications
+{
+  border: 1px solid grey;
+  padding: 20px;
+  font-size: 26px;
+}
+
+.product_qty
+{
+  font-size: 18px;
+  border: 1px solid grey;
+  border-top: none;
+  padding: 30px 20px;
+}
+
+.pack_details
+{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.pack_of
+{
+  font-size: 16px;
+  color: grey;
+}
+
+.general_details
+{
+  font-size: 18px;
+/*  margin: 30px 0;*/
+  border: 1px solid grey;
+  border-top: none;
+  padding: 20px;
+}
+
+table
+{
+  font-size: 14px;
+/*  background: red;*/
+  width: 50%;
+}
+
+tr
+{
+  line-height: 35px;
+}
+
+td:nth-child(1)
+{
+  color: grey;
+}
+
+.similar_products_container
+{
+  border: 1px solid grey;
+  margin: 20px 20px;
+  padding: 20px;
+
+}
+
+.similar_products
+{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer
+{
+  height: 400px;
+}
+
+@media (min-height: 768px) 
+{
+  #wrapper
+  {
+    height: 2000px;
+  }
+}

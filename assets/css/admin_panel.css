@@ -1,0 +1,298 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+/*	background: rgba(26, 39, 71 ,0.9);*/
+	font-family: cursive;
+}
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+}
+
+a
+{
+	text-decoration: none;
+	color: #000;
+}
+
+.conatiner,.products_container
+{
+	width: 100%;
+	height: 100%;
+}
+
+.navbar
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo,.logout
+{
+	cursor: pointer;
+}
+
+.logout
+{
+	color: rgb(255, 122, 1);
+}
+
+.logo span
+{
+	color: rgb(255,122,1);
+}
+
+.menu_items
+{
+	display: flex;
+	justify-content: space-between;
+/*	background: red;*/
+	flex-basis: 40%;
+}
+
+.menu_items>a
+{
+	padding: 20px 0;
+	color: #000;
+}
+
+.menu_items>a>div:hover
+{
+	text-decoration: underline 2px solid rgb(255,122,1);
+}
+
+.menu_items>a>div
+{
+}
+
+.dashbord
+{
+	text-align: center;
+	color: #000;
+	font-size: 26px;
+	margin-top: 30px;
+}
+
+.card
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 50px;
+	margin: 20px 120px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 104px;
+  perspective: 500px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back
+{
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #fff;
+  border-radius: 0.3rem;
+}
+
+.flip-card-front 
+{
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.flip-card-back 
+{
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tpending
+{
+  width: 80%;
+  padding: 5px 0;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.flip-card-front p
+{
+	background: none;
+	color: #000;
+}
+
+.see_orders
+{
+  background: rgb(255, 122, 1);
+  width: 60%;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+
+/******** products style start *********/
+
+.total_products
+{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.category_list
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+select
+{
+	letter-spacing: 1px;
+	padding: 5px 0;
+	outline: none;
+}
+
+select>option
+{
+	font-family: sans-serif;
+}
+
+.product_lists_title
+{
+	display: flex;
+	padding: 0 20px;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+
+.product_lists
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	margin: 15px 0;
+}
+
+.details
+{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.pics
+{
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left: 40px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #000;
+	padding: 3px;
+}
+
+.pics>img
+{
+	width: 48%;
+	height: 48%;
+}
+
+.pics>img:nth-child(1)
+{
+	margin-bottom: 5px;
+}
+
+.pics>span
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	width: 50%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+.customize
+{
+	display: flex;
+}
+
+.edit
+{
+	color: blue;
+	margin-right: 20px;
+}
+
+.delete
+{
+	color: red;
+	cursor: pointer;
+}
+
+/******** products style end *********/
+
+/******** Category Style Start*/
+
+.category_container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.category_container>form
+{
+	width: 50%;
+	background: red;
+}
+
+/******** Category Style end*/
